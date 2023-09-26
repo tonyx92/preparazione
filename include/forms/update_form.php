@@ -37,6 +37,7 @@ while($row = mysqli_fetch_assoc($select_utensile_by_id)){
         $update_utensile = mysqli_query($conn, $query);
 
         confirmQuery($update_utensile);
+        header("Location: index.php");
     }
 
 ?>
